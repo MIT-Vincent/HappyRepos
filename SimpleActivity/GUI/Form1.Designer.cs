@@ -35,16 +35,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.inputStrand1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.complimentaryStrand = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.GC = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.BP = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.MT = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.BP = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GC = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.complimentaryStrand = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.inputStrand1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,12 +67,14 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // inputStrand
             // 
@@ -120,56 +123,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Results";
             // 
-            // inputStrand1
+            // MT
             // 
-            this.inputStrand1.Enabled = false;
-            this.inputStrand1.Location = new System.Drawing.Point(6, 50);
-            this.inputStrand1.Name = "inputStrand1";
-            this.inputStrand1.Size = new System.Drawing.Size(377, 22);
-            this.inputStrand1.TabIndex = 2;
+            this.MT.Enabled = false;
+            this.MT.Location = new System.Drawing.Point(49, 210);
+            this.MT.Name = "MT";
+            this.MT.Size = new System.Drawing.Size(61, 22);
+            this.MT.TabIndex = 12;
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Input Strand";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "TM :";
             // 
-            // label3
+            // BP
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Complimentary Strand";
-            // 
-            // complimentaryStrand
-            // 
-            this.complimentaryStrand.Enabled = false;
-            this.complimentaryStrand.Location = new System.Drawing.Point(6, 106);
-            this.complimentaryStrand.Name = "complimentaryStrand";
-            this.complimentaryStrand.Size = new System.Drawing.Size(377, 22);
-            this.complimentaryStrand.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "GC% :";
-            // 
-            // GC
-            // 
-            this.GC.Enabled = false;
-            this.GC.Location = new System.Drawing.Point(49, 146);
-            this.GC.Name = "GC";
-            this.GC.Size = new System.Drawing.Size(61, 22);
-            this.GC.TabIndex = 8;
+            this.BP.Enabled = false;
+            this.BP.Location = new System.Drawing.Point(49, 179);
+            this.BP.Name = "BP";
+            this.BP.Size = new System.Drawing.Size(61, 22);
+            this.BP.TabIndex = 10;
             // 
             // label5
             // 
@@ -180,36 +157,75 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "BP :";
             // 
-            // BP
+            // GC
             // 
-            this.BP.Enabled = false;
-            this.BP.Location = new System.Drawing.Point(49, 179);
-            this.BP.Name = "BP";
-            this.BP.Size = new System.Drawing.Size(61, 22);
-            this.BP.TabIndex = 10;
+            this.GC.Enabled = false;
+            this.GC.Location = new System.Drawing.Point(49, 146);
+            this.GC.Name = "GC";
+            this.GC.Size = new System.Drawing.Size(61, 22);
+            this.GC.TabIndex = 8;
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "MT :";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 149);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "GC% :";
             // 
-            // MT
+            // complimentaryStrand
             // 
-            this.MT.Enabled = false;
-            this.MT.Location = new System.Drawing.Point(49, 210);
-            this.MT.Name = "MT";
-            this.MT.Size = new System.Drawing.Size(61, 22);
-            this.MT.TabIndex = 12;
+            this.complimentaryStrand.Enabled = false;
+            this.complimentaryStrand.Location = new System.Drawing.Point(6, 106);
+            this.complimentaryStrand.Name = "complimentaryStrand";
+            this.complimentaryStrand.Size = new System.Drawing.Size(377, 22);
+            this.complimentaryStrand.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Complimentary Strand";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Input Strand";
+            // 
+            // inputStrand1
+            // 
+            this.inputStrand1.Enabled = false;
+            this.inputStrand1.Location = new System.Drawing.Point(6, 50);
+            this.inputStrand1.Name = "inputStrand1";
+            this.inputStrand1.Size = new System.Drawing.Size(377, 22);
+            this.inputStrand1.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(88, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(242, 39);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "TM Calculator";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(413, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -217,7 +233,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Activity 3 -- Melting Temperature Calculator";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -246,6 +262,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox inputStrand1;
+        private System.Windows.Forms.Label label7;
     }
 }
 

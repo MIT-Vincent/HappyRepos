@@ -4,3 +4,9 @@ C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivi
 C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivity.pdb
 C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.dll
 C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.pdb
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivity.dll
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivity.pdb
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.csprojAssemblyReference.cache
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.csproj.CoreCompileInputs.cache
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.dll
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.pdb

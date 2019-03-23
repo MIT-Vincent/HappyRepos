@@ -11,3 +11,16 @@ C:\Users\corcu\source\repos\SimpleActivity\GUI\bin\Debug\SimpleActivity.pdb
 C:\Users\corcu\source\repos\SimpleActivity\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\corcu\source\repos\SimpleActivity\GUI\obj\Debug\GUI.exe
 C:\Users\corcu\source\repos\SimpleActivity\GUI\obj\Debug\GUI.pdb
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\bin\Debug\GUI.exe.config
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\bin\Debug\GUI.exe
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\bin\Debug\GUI.pdb
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\bin\Debug\SimpleActivity.dll
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\bin\Debug\SimpleActivity.pdb
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.Form1.resources
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.exe
+C:\Users\corcu\Documents\GitHub\HappyRepos\SimpleActivity\GUI\obj\Debug\GUI.pdb

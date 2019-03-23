@@ -16,7 +16,8 @@ namespace SimpleActivity
         private double bp;
         private double gc;
         private string strand1;
-
+        private string strand2;
+        
         public double Mt { get => mt; set => mt = value; }
         public double Cytinide { get => cytinide; set => cytinide = value; }
         public double Thymidine { get => thymidine; set => thymidine = value; }
@@ -25,10 +26,13 @@ namespace SimpleActivity
         public double Bp { get => bp; set => bp = value; }
         public double Gc { get => gc; set => gc = value; }
         public string Strand1 { get => strand1; set => strand1 = value; }
+        public string Strand2 { get => strand2; set => strand2 = value; }
 
         public DNAStuff(string strand)
         {
             Strand1 = strand;
+            getCompliment();
+             
         }
 
         public void getCytinide()
@@ -42,6 +46,7 @@ namespace SimpleActivity
                     Bp++;
                 }
             }
+            
         }
 
         public void getThymidine()
@@ -98,6 +103,36 @@ namespace SimpleActivity
             Gc = Math.Round(Gc, 2);
             
         }
+        public void getCompliment ()
+        {
+            char[] strando = Strand1.ToCharArray();
+            
+            for(int i = 0; i < strando.Length; i++)
+            {
+                if (strando[i] == 'C')
+                {
+                    strando[i] = 'G';
+                    continue;
+                }
+                if (strando[i] == 'G')
+                {
+                    strando[i] = 'C';
+                    continue;
+                }
+                if (strando[i] == 'A')
+                {
+                    strando[i] = 'T';
+                    continue;
+                }
+                if (strando[i] == 'T')
+                {
+                    strando[i] = 'A';
+                    continue;
+                }
+            }
+            Strand2 = new string(strando);
+        }
+        
     }
     }
 

@@ -28,12 +28,12 @@ namespace GUI
                 if ((n != 'A') && (n != 'G') && (n != 'C') && (n != 'T') && (n != '-') && (n != '5') && (n != '3')
                      && (n != '\''))
                 {
-                    MessageBox.Show("Invalid DNA Stream!", "Invalid Input!");
+                    MessageBox.Show("Invalid DNA Stream!", "Invalid Input -- Cannot Be Calculated!");
                     a = false;
                 }
             }
 
-            
+
             if (a == true)
             {
                 DNAStuff dna = new DNAStuff(inputStrand.Text);
@@ -41,11 +41,34 @@ namespace GUI
                 inputStrand.Text = "";
                 dna.computeMT();
                 dna.computeGC();
-                inputStrand1.Text = dna.Strand1;
-                MT.Text = dna.Mt.ToString() + "° C";
-                BP.Text = dna.Bp.ToString();
-                GC.Text = dna.Gc.ToString() + @"%";
+                if ((dna.Bp > 50) || (dna.Bp < 5))
+                {
+                    MessageBox.Show("Invalid Bases!", "Invalid Input -- Cannot Be Calculated!");
+                    inputStrand1.Text = "Invalid Bases!";
+                    MT.Text = "Invalid Bases!";
+                    BP.Text = "Invalid Bases!";
+                    GC.Text = "Invalid Bases!";
+                    complimentaryStrand.Text = "Invalid Bases!";
+                }
+                else
+                {
+                    inputStrand1.Text = dna.Strand1;
+                    MT.Text = dna.Mt.ToString() + "° C";
+                    BP.Text = dna.Bp.ToString();
+                    GC.Text = dna.Gc.ToString() + @"%";
+                    complimentaryStrand.Text = dna.Strand2;
+                }
             }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Activity 3 - C# Application!", "ABOUT");
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("N/A", "N/A");
         }
     }
 }
