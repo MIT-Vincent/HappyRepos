@@ -1,0 +1,6 @@
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.csprojAssemblyReference.cache
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.csproj.CoreCompileInputs.cache
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivity.dll
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\bin\Debug\SimpleActivity.pdb
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.dll
+C:\Users\corcu\source\repos\SimpleActivity\SimpleActivity\obj\Debug\SimpleActivity.pdb
