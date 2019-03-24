@@ -21,6 +21,14 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             bool a = true;
+
+            if (inputStrand.Text.StartsWith("3") == true)
+            {
+                    a = false;
+                    MessageBox.Show("Incorrect Input !","Error!");
+                    Form1.ActiveForm.Refresh();
+            }
+
             char[] c = inputStrand.Text.ToCharArray();
 
             foreach (char n in c)
@@ -30,8 +38,10 @@ namespace GUI
                 {
                     MessageBox.Show("Invalid DNA Stream!", "Invalid Input -- Cannot Be Calculated!");
                     a = false;
+                    break;
                 }
             }
+
 
 
             if (a == true)
@@ -52,11 +62,11 @@ namespace GUI
                 }
                 else
                 {
-                    inputStrand1.Text = dna.Strand1;
+                    inputStrand1.Text = "5'-" + dna.Strand1 + "-3'";
                     MT.Text = dna.Mt.ToString() + "° C";
                     BP.Text = dna.Bp.ToString();
                     GC.Text = dna.Gc.ToString() + @"%";
-                    complimentaryStrand.Text = dna.Strand2;
+                    complimentaryStrand.Text = "3'-" + dna.Strand2 + "-5'";
                 }
             }
         }

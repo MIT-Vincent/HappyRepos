@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,9 +126,9 @@
             // 
             // MT
             // 
-            this.MT.Enabled = false;
             this.MT.Location = new System.Drawing.Point(49, 210);
             this.MT.Name = "MT";
+            this.MT.ReadOnly = true;
             this.MT.Size = new System.Drawing.Size(61, 22);
             this.MT.TabIndex = 12;
             // 
@@ -142,9 +143,9 @@
             // 
             // BP
             // 
-            this.BP.Enabled = false;
             this.BP.Location = new System.Drawing.Point(49, 179);
             this.BP.Name = "BP";
+            this.BP.ReadOnly = true;
             this.BP.Size = new System.Drawing.Size(61, 22);
             this.BP.TabIndex = 10;
             // 
@@ -159,9 +160,9 @@
             // 
             // GC
             // 
-            this.GC.Enabled = false;
             this.GC.Location = new System.Drawing.Point(49, 146);
             this.GC.Name = "GC";
+            this.GC.ReadOnly = true;
             this.GC.Size = new System.Drawing.Size(61, 22);
             this.GC.TabIndex = 8;
             // 
@@ -176,9 +177,9 @@
             // 
             // complimentaryStrand
             // 
-            this.complimentaryStrand.Enabled = false;
             this.complimentaryStrand.Location = new System.Drawing.Point(6, 106);
             this.complimentaryStrand.Name = "complimentaryStrand";
+            this.complimentaryStrand.ReadOnly = true;
             this.complimentaryStrand.Size = new System.Drawing.Size(377, 22);
             this.complimentaryStrand.TabIndex = 6;
             // 
@@ -202,9 +203,9 @@
             // 
             // inputStrand1
             // 
-            this.inputStrand1.Enabled = false;
             this.inputStrand1.Location = new System.Drawing.Point(6, 50);
             this.inputStrand1.Name = "inputStrand1";
+            this.inputStrand1.ReadOnly = true;
             this.inputStrand1.Size = new System.Drawing.Size(377, 22);
             this.inputStrand1.TabIndex = 2;
             // 
@@ -214,7 +215,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(88, 54);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(242, 39);
+            this.label7.Size = new System.Drawing.Size(233, 38);
             this.label7.TabIndex = 5;
             this.label7.Text = "TM Calculator";
             // 
@@ -222,7 +223,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(413, 450);
             this.Controls.Add(this.label7);
@@ -231,7 +231,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputStrand);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Activity 3 -- Melting Temperature Calculator";
             this.menuStrip1.ResumeLayout(false);
